@@ -1,0 +1,280 @@
+/*********** Module Spacer ***********/
+.module-spacer--extra-extra-small {
+  height: 12px
+}
+.module-spacer--extra-small {
+  height: 12px
+}
+.module-spacer--small {
+  height: 20px
+}
+.module-spacer--medium {
+  height: 32px
+}
+
+
+.page-container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 1rem;
+  height: auto;
+  width: calc(100% - 2rem);
+}
+
+.page-ttl {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*********** Section ***********/
+.c-main {
+  padding: 96px 0
+}
+
+.c-section-wrapin {
+  margin: 0 auto;
+  max-width: 575px;
+  position: relative;
+  padding: 0 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.c-section__loading {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+}
+
+.c-section__loading > p {
+  color: #444;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-grid__column {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.p-grid__row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.p-grid__list-images {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.p-grid__list-images > .p-media__thumb {
+  margin: .5rem;
+  width: calc(50% - 1rem);
+}
+
+.p-media__thumb {
+  position: relative;
+  overflow: hidden;
+  width: 100%
+}
+
+.p-media__thumb::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.p-media__thumb > img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.p-media-box {
+  background: rgb(209, 209, 209);
+ }
+
+
+/*********** Text Input *********/
+.text-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input + .text-input {
+  margin-top: 10px;
+}
+
+.text-input-label {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1.5px rgb(50, 50, 50);
+  transition: all .1s;
+}
+
+.input:focus {
+  border-bottom: solid 2px rgb(50, 50, 50);
+}
+
+
+
+/*********** Link *********/
+.link {
+  cursor: pointer;
+}
+
+/*********** Category ***********/
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+  list-style: none;
+  margin: 1rem;
+}
+
+.category {
+  cursor: pointer;
+  position: relative;
+}
+
+.category-img {
+  width: calc(100%);
+  height: 300px;
+  object-fit: cover;
+  transition: all .3s;
+}
+
+.category-img:hover {
+  opacity: 0.6;
+}
+
+.category-name {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: rgb(255, 238, 238);
+  z-index: 999;
+}
+
+
+/*********** Product Detail ***********/
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+/*********** Footer ***********/
+.l-footer {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.l-footer > a {
+  color: #444;
+  font-size: .9rem;
+  margin-right: 1rem;
+}
+
+.u-text-ttl {
+  font-size: 1.7rem;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  color: #444;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.u-text-ttl::before {
+  content: "";
+  background-color: #444;
+  width: 100%;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.u-text-small {
+  font-size: .9rem;
+}
+
+.u-text__link-none {
+  text-decoration: none;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-display-none {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  /*********** Module Spacer ***********/
+  .module-spacer--extra-extra-small {
+      height: 16px
+  }
+  
+  .module-spacer--extra-small {
+      height: 20px
+  }
+  
+  .module-spacer--small {
+      height: 32px
+  }
+  
+
+  /*********** Section ***********/
+  .c-section-wrapin {
+      max-width: 1024px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  /*********** Module Spacer ***********/
+  .module-spacer--medium {
+      height: 48px
+  }
+}

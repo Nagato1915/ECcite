@@ -1,0 +1,19 @@
+export {default as CartList} from './CartList' ;
+export {default as Categories} from './Categories';
+export {default as Category} from './Category';
+export {default as CategoryPage} from './CategoryPage';
+export {default as Home} from './Home';
+export {default as Products} from './Products'
+export {default as ProductEdit} from './ProductEdit';
+export {default as ProductList} from './ProductList'
+export {default as Login}  from './Login';
+export {default as Reset}  from './Reset';
+export {default as SearchResult} from './SearchResult';
+export {default as SignUp} from './SignUp';
+export {default as SignIn} from './SignIn';
+export {default as ProductDetail} from './ProductDetail';
+export {default as Recommend} from './Recommend';
+export {default as Top} from './Top';
+export {default as OrderConfirm} from './OrderConfirm';
+export {default as OrderHistory} from './OrderHistory';
+export {default as FavList} from './FavList';
